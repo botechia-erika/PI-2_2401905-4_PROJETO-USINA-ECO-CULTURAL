@@ -7,7 +7,17 @@
 :root{
     --color-terracotta: #DF7131;
     --shadow-title: -1px 2px 0px rgba(66, 68, 90, 1);
+    --bg-page: url('./../assets/bg/bgDefault.svg');
+    --bg-bannerHome: url('./../assets/brand/logoAdaptado.png');
 }
+
+body{
+    display: grid;
+    max-width: 1fr;
+    min-height: 100vh;
+    background-image:var(--bg-page);
+}
+
 
 #toggleBtnOffcanvas{
     position: fixed;
@@ -18,7 +28,6 @@
     z-index: 9999;
     height: 50px;
     width: 50px;
-
     background-color: var(--color-terracotta)!important;
 }
 
@@ -31,7 +40,7 @@
     text-shadow: var(--shadow-title);
 }
 
-.bg-terracota{
+.bg-terracota, .btn-terracota, .btn-terracotta:hover, .btn-terracotta:focus, .btn-terracotta:active{
     background-color: var(--color-terracotta)!important;
 }
 
@@ -43,4 +52,32 @@
         padding-bottom: 140px;
     grid-template-rows: 330px 1fr;
     overflow-y: scroll;
+}
+
+.bannerHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: var(--color-terracotta);
+    opacity: 0.7;
+    background-image: var(--bg-bannerHome);
+    object-fit: contain;
+    font-weight: 900;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-position: right  center;
+    border-radius:  20px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    padding: 1rem;
+    border-radius: 22px;
 }
