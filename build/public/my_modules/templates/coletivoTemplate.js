@@ -120,7 +120,7 @@ const ColetivoPage = `
       </div>
     </div>
     <div class="col-12 col-md-6 text-center">
-      <img src="/assets/brand/avaazOrg.png" class="img-fluid rounded-4 shadow" alt="Avaaz">
+      <img src="https://raw.githubusercontent.com/botechia-erika/PI-2_2401905-4_PROJETO-USINA-ECO-CULTURAL/1e1a0840faf672e3e7634ee74ca61b66acdc7494/build/public/assets/brand/avaazorg.png?token=BPAADYY2N6DECEGIFU2HWXDIIFO5E" class="img-fluid rounded-4 shadow" alt="Avaaz">
     </div>
   </div>
 
