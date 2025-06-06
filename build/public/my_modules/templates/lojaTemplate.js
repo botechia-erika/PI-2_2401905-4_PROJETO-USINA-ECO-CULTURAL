@@ -1,3 +1,5 @@
+
+
 const heroTemplate = `
 <div class="container bannerHome">
 <h2>Conheça Nossos Produtos</h2>
@@ -15,7 +17,6 @@ const heroTemplate = `
     <option value="ALFABETICA_REVERSA">Z-A</option>
     <option value="MENOR_PRECO">Menor Preço</option>
     <option value="MAIOR_PRECO">Maior Preço</option>
-
     </select>
 </form>
 </div>
