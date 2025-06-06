@@ -1,7 +1,15 @@
+
+
 export const headerTemplate = `
 <div class="container p-3">
 <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-    <h1 id="title">USINA ECO-CULTURAL</h1>
+    <h1 id="title">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="/assets/brand/logoAdaptado.png" alt="Logo Usina Eco-Cultural" width="60" height="60" class="me-2">
+            <span class="fs-4">Usina Eco-Cultural</span>
+        </a>
+    </h1>
+
     
         <button
             class="btn btn-dark"
