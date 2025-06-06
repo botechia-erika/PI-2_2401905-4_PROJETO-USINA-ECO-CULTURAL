@@ -1,3 +1,4 @@
+/* ...existing code... */
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -6,18 +7,79 @@
 
 :root{
     --color-terracotta: #DF7131;
-    --shadow-title: -1px 2px 0px rgba(66, 68, 90, 1);
+    --shadow-title: -1px 2px 0px rgb(255, 255, 255);
     --bg-page: url('./../assets/bg/bgDefault.svg');
     --bg-bannerHome: url('./../assets/brand/logoAdaptado.png');
 }
 
-body{
+body {
     display: grid;
     max-width: 1fr;
     min-height: 100vh;
-    background-image:var(--bg-page);
+    background-image: var(--bg-page);
+}
+.modal-backdrop {
+ display: none !important;
 }
 
+.modal-content{
+    position: fixed;
+    top: 20vh;
+    bottom: 20vh;
+    left: 20vw;
+    right: 20vw;
+    z-index: 9999;
+    max-height: 60vh;
+    max-width: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+/* ...existing code... */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.products-section {
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.badge {
+    margin-left: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+}
 
 #toggleBtnOffcanvas{
     position: fixed;
@@ -25,9 +87,9 @@ body{
     left: 30px;
     width: 100%;
     height: 100%;
-    z-index: 9999;
-    height: 50px;
-    width: 50px;
+    z-index: 99;
+    max-height: 50px;
+    max-width: 50px;
     background-color: var(--color-terracotta)!important;
 }
 
@@ -44,17 +106,16 @@ body{
     background-color: var(--color-terracotta)!important;
 }
 
-
-.main{
+.main {
     display: grid;
     min-height: 100vh;
     padding-top: 120px;
-        padding-bottom: 140px;
+    padding-bottom: 140px;
     grid-template-rows: 330px 1fr;
     overflow-y: scroll;
 }
 
-.bannerHome{
+.bannerHome {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,16 +129,57 @@ body{
     font-weight: 900;
     background-repeat: no-repeat;
     padding: 20px;
-    background-position: right  center;
-    border-radius:  20px;
+    background-position: right center;
+    border-radius: 20px;
     overflow: hidden;
     margin: 40px auto;
 }
 
-.card-img-top{
+.card-img-top {
     height: 200px;
     object-fit: cover;
     object-position: center center;
     padding: 1rem;
     border-radius: 22px;
+}
+
+/** STORE PAGE **/
+.hero-section {
+    background: #f8f9fa;
+    padding: 110px 0 120px 0;
+    text-align: center;
+}
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3436;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #636e72;
+}
+.about-section {
+    background: #fff;
+    padding: 40px 0;
+}
+.products-section {
+    padding: 40px 0;
+}
+.product-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+.product-card img {
+    border-radius: 12px 12px 0 0;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+.product-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+.contact-section {
+    background: #fff;
+    padding: 40px 0;
 }
